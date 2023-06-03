@@ -2,6 +2,7 @@
 Reddit but for pocketmine?!?!!
 
 **Plugin in development**
+***Disclaimer: the plugin is currently not working or on poggit***
 
 > Features:
 > - Age Filter rating ( allows admins to set their age limit for the reddit plugin for their appropriate age group)
