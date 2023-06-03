@@ -1,4 +1,5 @@
 Filter: PG
 # default is PG, all values are: PG, G, MA15, MA18, R18, choose responsibly (COPPA)
 
-
+email: johndoe@example.com
+password: Password
