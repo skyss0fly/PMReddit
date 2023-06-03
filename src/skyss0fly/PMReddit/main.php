@@ -5,7 +5,7 @@ use pocketmine/Server;
 use pocketmine/plugin/PluginBase;
 
 class main extends PluginBase {
- $filter
+ 
   public function onLoad(): void {
  $checker = $this->getFile('firstinstall.json')
    if $checker == true
