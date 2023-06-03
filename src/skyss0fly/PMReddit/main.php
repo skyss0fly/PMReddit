@@ -1,7 +1,10 @@
 <?php
 namespace skyss0fly/PMReddit;
 
-class main {
+use pocketmine/Server;
+use pocketmine/plugin/PluginBase;
+
+class main extends PluginBase {
  $filter
   public function onLoad(): void {
  $checker = $this->getFile('firstinstall.json')
