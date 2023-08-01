@@ -1,12 +1,9 @@
 <?php
 namespace skyss0fly\PmReddit;
 use pocketmine\plugin\PluginBase;
-// Plugin to allow users to browse Reddit and login and comment
-
-// Include Reddit API library
 require_once("RedditAPI.php");
 
-// Create new Pocketmine-MP plugin
+
 class Main extends PluginBase {
 	
 	// Plugin init function
@@ -68,5 +65,5 @@ class Main extends PluginBase {
 }
 
 // Register plugin
-$this->getServer()->getPluginManager()->register("RedditBrowserPlugin", "1.0", new RedditBrowserPlugin());
+$this->getServer()->getPluginManager()->register("PMReddit", "1.0", new PMReddit());
 
