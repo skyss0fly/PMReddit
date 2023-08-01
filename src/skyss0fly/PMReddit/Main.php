@@ -7,16 +7,12 @@ require_once("RedditAPI.php");
 class Main extends PluginBase {
 	
 	// Plugin init function
-	public function onEnable() {
-		// Register commands
-		$this->getServer()->getCommandMap()->register("reddit", new RedditCommand($this));
-
-		// Register events
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
+	public function onEnable(): void {
+		$this->getLogger()->info("PMReddit is online :)");
 	}
 
 	// Command handler
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
+	public function onCommand(CommandSender $sender, Command $command, $label, array $args): bool {
 		if(strtolower($command->getName()) === 'reddit') {
 			if(count($args) < 1) {
 				$sender->sendMessage("Usage: /reddit <action> [arguments]");
