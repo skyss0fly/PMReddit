@@ -1,5 +1,5 @@
 <?php
-namespace skyss0fly\PmReddit;
+namespace skyss0fly\PMReddit;
 use pocketmine\plugin\PluginBase;
 require_once("RedditAPI.php");
 
