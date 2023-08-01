@@ -12,7 +12,7 @@ class Main extends PluginBase {
 	}
 
 	// Command handler
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args): bool {
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
 		if(strtolower($command->getName()) === 'reddit') {
 			if(count($args) < 1) {
 				$sender->sendMessage("Usage: /reddit <action> [arguments]");
