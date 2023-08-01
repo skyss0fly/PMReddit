@@ -1,5 +1,6 @@
 <?php 
 namespace skyss0fly\PMReddit;
+class RedditAPI {
 // Initialize the curl session 
 $curl = curl_init();
 
@@ -23,3 +24,4 @@ $response = json_decode($response, true);
 
 // Print the response 
 print_r($response); 
+}
